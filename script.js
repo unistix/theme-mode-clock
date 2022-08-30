@@ -52,7 +52,7 @@ function setTime(){
 	_second.style.transform = `translate(50%, -100%) rotate(${scale(seconds,0,59,0,360)}deg)`;
 
 
-	_time.innerHTML = `${hoursForClock}:${minutes < 10 ? `0 ${minutes}` : minutes} ${ampm}`
+	_time.innerHTML = `${hoursForClock}:${minutes < 10 ? `0${minutes}` : minutes} ${ampm}`
 
 	_date.innerHTML = `${days[day]}, ${months[month]} ${date}`
 
